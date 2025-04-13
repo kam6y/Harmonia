@@ -1,0 +1,16 @@
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+    return (
+        <Html lang="en">
+            <Head>
+                {/* 初期状態は空文字。クライアント側でCSRFトークンが取得できたら更新されます。 */}
+                <meta name="csrf-token" content="" />
+            </Head>
+            <body className="antialiased">
+            <Main />
+            <NextScript />
+            </body>
+        </Html>
+    )
+}
